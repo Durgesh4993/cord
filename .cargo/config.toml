@@ -9,7 +9,6 @@ rustdocflags = [
 CC_x86_64_unknown_linux_musl = { value = ".cargo/musl-gcc", force = true, relative = true }
 CXX_x86_64_unknown_linux_musl = { value = ".cargo/musl-g++", force = true, relative = true }
 
-
 [target.'cfg(target_arch = "x86_64")']
 # Require AES-NI on x86-64 by default
 rustflags = ["-C", "target-feature=+aes"]
